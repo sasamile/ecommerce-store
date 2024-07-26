@@ -20,7 +20,7 @@ function PreviewModal() {
           <Gallery image={product.image} />
         </div>
         <div className="sm:col-span-8 lg:col-span-7">
-          <Info data={product} onclose={PreviewModal.onClose} />
+          <Info data={product} />
         </div>
       </div>
     </Modal>

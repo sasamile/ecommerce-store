@@ -1,9 +1,11 @@
+
 import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
 import Gallery from "@/components/gallery";
 import Info from "@/components/Info";
 import ProductList from "@/components/ProductList";
 import Container from "@/components/ui/container";
+import usePreviewModal from "@/hooks/use-preview-modal";
 
 interface ProductPageProps {
   params: {

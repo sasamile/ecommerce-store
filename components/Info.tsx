@@ -10,10 +10,9 @@ import useCart from "@/hooks/use-cart";
 
 interface InfoProps {
   data: Product;
-  onclose: () => void;
 }
 
-function Info({ data,onclose }: InfoProps) {
+function Info({ data }: InfoProps) {
   const route = useRouter();
 
   const cart = useCart();
@@ -21,8 +20,8 @@ function Info({ data,onclose }: InfoProps) {
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.stopPropagation();
     cart.addItem(data);
-    onclose();
     route.push("/cart");
+
   };
 
   return (
